@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C92F41BE2D022AAD004A49BE /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92F41BD2D022AAD004A49BE /* HeroHeaderUIView.swift */; };
 		C94BDF182CFA107C000A57E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BDF172CFA107C000A57E3 /* AppDelegate.swift */; };
 		C94BDF1A2CFA107C000A57E3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BDF192CFA107C000A57E3 /* SceneDelegate.swift */; };
 		C94BDF1C2CFA107C000A57E3 /* MainTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94BDF1B2CFA107C000A57E3 /* MainTabbarViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C92F41BD2D022AAD004A49BE /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 		C94BDF142CFA107C000A57E3 /* netflix-clone-ios-uikit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "netflix-clone-ios-uikit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94BDF172CFA107C000A57E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C94BDF192CFA107C000A57E3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C9D924272CFB443900E87DCB /* CollectionViewTableViewCell.swift */,
+				C92F41BD2D022AAD004A49BE /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				C94BDF312CFA1900000A57E3 /* SearchViewController.swift in Sources */,
 				C94BDF1C2CFA107C000A57E3 /* MainTabbarViewController.swift in Sources */,
 				C9D924282CFB443900E87DCB /* CollectionViewTableViewCell.swift in Sources */,
+				C92F41BE2D022AAD004A49BE /* HeroHeaderUIView.swift in Sources */,
 				C94BDF182CFA107C000A57E3 /* AppDelegate.swift in Sources */,
 				C94BDF332CFA1925000A57E3 /* DownloadViewController.swift in Sources */,
 				C94BDF2F2CFA18D6000A57E3 /* UpcommingViewController.swift in Sources */,
