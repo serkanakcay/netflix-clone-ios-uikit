@@ -29,7 +29,7 @@ class HomeViewController: UIViewController {
         configureNavbar()
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTableView.tableHeaderView = headerView
-        getTrendingMovies()
+        fetchData()
     }
     
     private func configureNavbar() {
@@ -56,18 +56,32 @@ class HomeViewController: UIViewController {
         super.viewDidLayoutSubviews()
         homeFeedTableView.frame = view.bounds
     }
-    private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { result in
+    private func fetchData() {
+       /* APICaller.shared.getTrendingMovies { result in
             switch result {
             case .success(let movies):
                 print("Movies: \(movies)")
             case .failure(let error):
                 print("Error: \(error.localizedDescription)")
             }
+        */
+       /* let apiCaller = APICaller()
+        apiCaller.getTrendingTvs { result in
+            switch result {
+            case .success(let tvShows):
+                print("Trending TV Shows: \(tvShows)")
+            case .failure(let error):
+                print("Error: \(error.localizedDescription)")
+            }
+        }
+        */
+        APICaller.shared.getPopular { _ in
+            
+        }
         }
     
     }
-}
+
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -101,7 +115,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         header.textLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
         header.textLabel?.frame = CGRect(x: header.bounds.origin.x + 20, y: header.bounds.origin.y, width: 100, height: header.bounds.height)
         header.textLabel?.textColor = .white
-        header.textLabel?.text = header.textLabel?.text?.lowercased()
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
     }
     
     
